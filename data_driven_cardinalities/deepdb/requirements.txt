@@ -31,7 +31,7 @@ numpy
 packaging
 pandas
 patsy
-pkg-resources
+setuptools
 pluggy
 py
 pycparser
@@ -46,7 +46,6 @@ scikit-learn
 scipy
 SecretStorage
 six
-sklearn
 sqlparse
 statsmodels
 sympy
