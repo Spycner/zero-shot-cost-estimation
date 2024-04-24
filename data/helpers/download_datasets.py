@@ -39,7 +39,7 @@ def download_dataset(rel_fit_dataset_name, dataset_name, data_dir="data/datasets
     """
     schema = load_schema_json(dataset_name)
 
-    dataset_dir = os.path.join(data_dir, dataset_name)
+    dataset_dir = os.path.join(data_dir, dataset_name, "tables")
     os.makedirs(dataset_dir, exist_ok=True)
 
     for table in schema.tables:

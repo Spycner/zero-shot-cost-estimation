@@ -139,6 +139,10 @@ if __name__ == "__main__":
         args.database_kwarg_dict = {}
 
     if args.download_datasets:
+        logger.exception(
+            msg="Downloading datasets from relational.fit is currently not working"
+        )
+        exit(0)
         logger.info("Downloading datasets from relational.fit ...")
 
         for rel_fit_dataset_name, dataset_name in tqdm(
